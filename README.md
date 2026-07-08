@@ -34,13 +34,13 @@ make
 ```
 
 Changelog:
-Added #include <string.h> (fixes strlen/strcat errors)
-Added #include <arpa/inet.h> (fixes inet_addr error)
-Changed char *cmd to const char *cmd (fixes const qualifier warning)
-Fixed fgets(buf, size, fp) (original had sizeof(buf) which is pointer size (8), not buffer size)
-Added output[0] = '\0' (initialize before strcat)
-Fixed execve call (use proper argv array instead of 0, 0)
-Added error checking for malloc, popen, socket, connect
+1) Added #include <string.h> (fixes strlen/strcat errors)
+2) Added #include <arpa/inet.h> (fixes inet_addr error)
+3) Changed char *cmd to const char *cmd (fixes const qualifier warning)
+4) Fixed fgets(buf, size, fp) (original had sizeof(buf) which is pointer size (8), not buffer size)
+5) Added output[0] = '\0' (initialize before strcat)
+6) Fixed execve call (use proper argv array instead of 0, 0)
+7) Added error checking for malloc, popen, socket, connect
 
 Enjoy!
     
