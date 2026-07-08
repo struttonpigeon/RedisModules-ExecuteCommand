@@ -21,6 +21,17 @@ Now run `redis-cli` and try the commands:
 EDIT 8 JUL 26:
 I noticed the previous repo fork didnt work. I've updated the module.c to compile correctly in 2026.
 
+```bash
+cd src
+gcc -fPIC -shared -o module.so module.c -I../
+```
+Or use the make
+
+```
+cd ..
+make clean
+make
+```
 
 Enjoy!
     
