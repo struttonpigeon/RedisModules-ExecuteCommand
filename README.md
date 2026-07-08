@@ -18,5 +18,9 @@ Now run `redis-cli` and try the commands:
 127.0.0.1:6379> system.rev 127.0.0.1 9999
 ```
 
+EDIT 8 JUL 26:
+I noticed the previous repo fork didnt work. I've updated the module.c to compile correctly in 2026.
+
+
 Enjoy!
     
